@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.pet.petstore.model.Pet;
 import com.pet.petstore.repository.PetStoreRepository;
 
+@CrossOrigin()
 @RestController
 @RequestMapping(value="/pet")
 public class PetStoreController {
@@ -52,6 +54,13 @@ public class PetStoreController {
 	public @ResponseBody List<Pet> getAllAvailable() {
 		
 		List<Pet> resultStream = petRepository.findAllAvailable();
+		return resultStream;
+	}
+	
+	@RequestMapping(value="/listAll", method=RequestMethod.GET)
+	public @ResponseBody List<Pet> getAll() {
+		
+		List<Pet> resultStream = petRepository.findAll();
 		return resultStream;
 	}
 	

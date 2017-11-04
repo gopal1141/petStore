@@ -14,6 +14,8 @@ public interface PetStoreRepository extends CrudRepository<Pet, Integer>{
 	@Query(value="select p from Pet p where status='Available'")
 	List<Pet> findAllAvailable();
 	
+	List<Pet> findAll();
+	
 	Pet findById(Integer Id);
 	
 	Pet save(Pet pet);

@@ -1,6 +1,7 @@
 C:\Users\Gopal\eclipse-workspace\petstore\src\main\java\com\pet\petstore\App.java
 C:\Users\Gopal\eclipse-workspace\petstore\src\main\java\com\pet\petstore\controllers\PetStoreController.java
 C:\Users\Gopal\eclipse-workspace\petstore\src\main\java\com\pet\petstore\model\Category.java
+C:\Users\Gopal\eclipse-workspace\petstore\src\main\java\com\pet\petstore\config\SecurityConfig.java
 C:\Users\Gopal\eclipse-workspace\petstore\src\main\java\com\pet\petstore\model\Pet.java
 C:\Users\Gopal\eclipse-workspace\petstore\src\main\java\com\pet\petstore\model\Status.java
 C:\Users\Gopal\eclipse-workspace\petstore\src\main\java\com\pet\petstore\repository\PetStoreRepository.java

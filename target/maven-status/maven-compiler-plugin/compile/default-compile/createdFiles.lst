@@ -1,0 +1,7 @@
+com\pet\petstore\model\Category.class
+com\pet\petstore\controllers\PetStoreController.class
+com\pet\petstore\repository\PetStoreRepository.class
+com\pet\petstore\App.class
+com\pet\petstore\model\Status.class
+com\pet\petstore\model\Pet.class
+com\pet\petstore\config\SecurityConfig.class
